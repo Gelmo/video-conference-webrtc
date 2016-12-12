@@ -14,7 +14,7 @@ $( document ).ready(function() {
  *
  */
 function shortUrl() {
-    return ("000000" + (Math.random()*Math.pow(36,6) << 0).toString(36)).slice(-6)
+    return "dankvid"
 }
 
 /**
