@@ -1,5 +1,6 @@
 FROM node:alpine
 
+RUN apk add --no-cache --update git
 RUN cd ~
 RUN git clone https://github.com/Gelmo/video-conference-webrtc.git
 RUN cd video-conference-webrtc
