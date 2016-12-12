@@ -1,4 +1,4 @@
-FROM node:4-onbuild
+FROM node:4-alpine
 
 RUN apk add --no-cache --update git
 RUN cd ~
