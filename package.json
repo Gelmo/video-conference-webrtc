@@ -1,20 +1,20 @@
 {
-    "name": "foobubble",
+    "name": "DankVid",
     "version": "0.0.1",
-    "description": "webrtc description",
+    "description": "DankSolutions Video Chat",
     "main": "server.js",
     "scripts": {
         "start": "node server.js"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/lucaslouca/"
+        "url": "https://github.com/Gelmo/"
     },
     "keywords": [
         "webrtc",
         "videochat"
     ],
-    "author": "lucaslouca",
+    "author": "Gelmo",
     "license": "MIT",
     "dependencies": {
         "node-static": "~0.7.1",
