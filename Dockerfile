@@ -1,11 +1,13 @@
-FROM node:4-onbuild
+FROM mhart/alpine-node:6
 
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get install -y git
-EXPOSE 1337
-RUN cd ~
+WORKDIR /src
+ADD . .
+
+RUN apk add --no-cache make gcc g++ python git
+WORKDIR /root
 RUN git clone https://github.com/Gelmo/video-conference-webrtc.git
-RUN cd video-conference-webrtc
+WORKDIR /root/video-conference-webrtc
 RUN npm install
-CMD node server.js
+
+EXPOSE 3000 31335
+CMD ["node", "server.js"]
